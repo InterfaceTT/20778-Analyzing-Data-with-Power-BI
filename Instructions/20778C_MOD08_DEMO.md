@@ -1,3 +1,8 @@
+---
+lab:
+    title: 'DEMO - Using Marketplace Visualizations'
+    module: 'Module 08 Demo - The Developer API Development with Power BI'
+---
 # Module 8: The Developer API Development with Power BI
 
 - [Module 8: The Developer API Development with Power BI](#module-8-the-developer-api-development-with-power-bi)

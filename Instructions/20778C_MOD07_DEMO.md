@@ -1,3 +1,8 @@
+---
+lab:
+    title: 'DEMO - Direct Connectivity'
+    module: 'Module 07 Demo - Direct Connectivity'
+---
 # Module 7: Direct Connectivity
 
 - [Module 7: Direct Connectivity](#module-7-direct-connectivity)

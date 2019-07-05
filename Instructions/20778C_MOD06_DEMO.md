@@ -1,3 +1,8 @@
+---
+lab:
+    title: 'DEMO - Creating a Power BI Report'
+    module: 'Module 06 Demo - Interactive Data Visualizations'
+---
 # Module 6: Interactive Data Visualizations
 
 - [Module 6: Interactive Data Visualizations](#module-6-interactive-data-visualizations)

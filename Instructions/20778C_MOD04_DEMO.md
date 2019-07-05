@@ -1,3 +1,8 @@
+---
+lab:
+    title: 'DEMO - Shaping and Combining Data'
+    module: 'Module 04 Demo - Shaping and Combining Data'
+---
 # Module 4: Shaping and Combining Data
 
 - [Module 4: Shaping and Combining Data](#module-4-shaping-and-combining-data)

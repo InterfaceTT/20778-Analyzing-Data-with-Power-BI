@@ -1,3 +1,8 @@
+---
+lab:
+    title: 'DEMO - Power BI mobile apps'
+    module: 'Module 09 Demo - Power BI Mobile'
+---
 # Module 9: Power BI Mobile
 
 - [Module 9: Power BI Mobile](#module-9-power-bi-mobile)

@@ -1,3 +1,8 @@
+---
+lab:
+    title: 'DEMO - Importing Data into Power BI'
+    module: 'Module 03 Demo - Power BI Data'
+---
 # Module 3: Power BI Data
 
 - [Module 3: Power BI Data](#module-3-power-bi-data)

@@ -1,3 +1,8 @@
+---
+lab:
+    title: 'DEMO - Creating a Power BI Dashboard'
+    module: 'Module 02 Demo - Introducing Power BI'
+---
 # Module 2: Introducing Power BI
 
 - [Module 2: Introducing Power BI](#module-2-introducing-power-bi)

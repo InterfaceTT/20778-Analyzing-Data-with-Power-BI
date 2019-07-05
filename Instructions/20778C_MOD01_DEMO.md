@@ -1,3 +1,8 @@
+---
+lab:
+    title: 'DEMO - Exploring an Enterprise BI Solution'
+    module: 'Module 01 Demo - Introduction to Self-Service BI Solutions'
+---
 # Module 1: Introduction to Self-Service BI Solutions
 
 - [Module 1: Introduction to Self-Service BI Solutions](#module-1-introduction-to-self-service-bi-solutions)
