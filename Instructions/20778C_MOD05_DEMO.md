@@ -187,7 +187,8 @@
 <!-- {% raw %} -->
     ```
     DimCountry = DATATABLE ("Country", STRING, "Code", STRING,{{"United States", "US"},{"United Kingdom", "UK"},{"France", "FR"},{"Germany", "DE"},{"Spain", "ES"}})
-<!-- {% endraw %} -->    ```
+    ```
+<!-- {% endraw %} -->
 
 15. In the **FIELDS** pane, note the new table.
 
