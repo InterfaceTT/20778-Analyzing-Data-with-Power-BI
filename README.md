@@ -1,5 +1,8 @@
 # 20778C: Analyzing Data with Power BI
 
+## Link to GitHub Pages UI
+https://interfacett.github.io/20778-Analyzing-Data-with-Power-BI/
+
 ## What are we doing?
 
 - To support course 20778 Analyzing Data with Power BI, we will need to make frequent updates to the course content to keep it current with the services used in the course. We are publishing the lab instructions and lab files on GitHub to allow for open contributions between the course authors and MCTs to keep the content current with changes to the Power BI platform.
