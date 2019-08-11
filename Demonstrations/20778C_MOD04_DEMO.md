@@ -30,13 +30,13 @@ lab:
 
 6. In the **Power BI Desktop** window, click **Get data**.
 
-7. In the **Get Data** dialog box, click **Azure SQL database**, and then click **Connect**.
+7. In the **Get Data** dialog box, click **SQL Server**, and then click **Connect**.
 
-8. In the **SQL Server database** window, in the **Server** box, type the URL of the Azure server **\<*Server Name*\>.database.windows.net** (where **\<*Server Name*\>** is the name of the server you created).
+8. In the **SQL Server database** window, in the **Server** box, type the server **localhost**.
 
-9. In the **Database (optional)** box, type **AdventureWorksLT**, and then click **OK**.
+9. In the **Database (optional)** box, type **AdventureWorksLT**, Data Connectivity mode has **Import** selected, and then click **OK**.
 
-10. If the **SQL Server database** dialog box appears, click **Database**. In the **Username** box, type **Student**, in the **Password** box, type **Pa55w.rd**, and then click **Connect**.
+10. If the **SQL Server database** dialog box appears, make sure the use Current Credentials is selected and then click **Connect**.
 
 11. In the **Navigator** window, select the **SalesLT.SalesOrderDetail** check box, and then click **Edit**.
 
@@ -50,7 +50,7 @@ lab:
 
 16. In the **APPLIED STEPS** list, right-click **Renamed Columns**, click **Rename**, type **Renamed OrderQty**, and then press Enter.
 
-17. In the center pane, click the **rowguid** column, and with the Ctrl key held down, click **ModifiedDate**.
+17. Scroll the center pane to the right, click the **rowguid** column, and with the Ctrl key held down, click **ModifiedDate**.
 
 18. Right-click either of the column headings, and then click **Remove Columns**.
 
@@ -60,7 +60,7 @@ lab:
 
 21. In the **APPLIED STEPS** list, right-click **Removed rowguid and ModifiedDate**, and then click **Move Up**.
 
-22. In the **APPLIED STEPS** list, next to **Removed SalesOrderDetailID**, click the **delete** icon.
+22. In the **APPLIED STEPS** list, select  **Removed SalesOrderDetailID**, then click the **delete** icon to the left of the name.
 
 23. In the **Delete Step** dialog box, click **Delete**. The **SalesOrderDetailID** column reappears in the table.
 
