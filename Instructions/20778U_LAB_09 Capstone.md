@@ -18,7 +18,9 @@ lab:
       - [Task 1: Publish Reports from Power BI Desktop](#task-1-publish-reports-from-power-bi-desktop)
       - [Task 2: Create a Power BI Dashboard](#task-2-create-a-power-bi-dashboard)
       - [Task 3: Set up Data Refresh through the Gateway](#task-3-set-up-data-refresh-through-the-gateway)
-
+    - [Appendix DAX Expressions](#appendix-dax-expressions)
+      - [Calculated Columns](#calculated-columns)
+      - [Measures](#measures)
 
 ## Lab: Creating a Power BI Report
 
@@ -50,7 +52,7 @@ lab:
     - Change the data category of the **CountryRegion** column to **Country/Region**.
     - Change the data category of the **PostalCode** column to **Postal Code**.
     - Add a new calculated column called **FullAddress**, and then for the value of each row, concatenate **AddressLine1**, **City**, **StateProvince**, **CountryRegion**, and **PostalCode**.
-    - (Hint: See the DAX Lab Answer Key if needed)
+        - *(__Hint:__ See the __DAX Expressions__ below if needed)*
 1. Make the following changes to the **Sales** table:
     - Delete the **RevisionNumber** column.
     - Delete the **SalesOrderNumber** column.
@@ -58,10 +60,10 @@ lab:
     - Hide the **SalesOrderID** column in the report view.
     - Hide the **SalesOrderDetailID** column in the report view.
     - Add a new calculated column called **LineTotal**, which multiplies the **OrderQty** column by the **ListPrice** column.
-    - (Hint: See the DAX Lab Answer Key if needed)
+        - *(__Hint:__ See the __DAX Expressions__ below if needed)*
     - Change the format of the **LineTotal** column to the currency **$ English (United States)**.
     - Create a new measure named **TargetSales**, which increases the **LineTotal** field in the **Sales** table by 20 percent.
-    - (Hint: See the DAX Lab Answer Key if needed)
+        - *(__Hint:__ See the __DAX Expressions__ below if needed)*
 1. Save the file.
 
 #### Task 3: Combine Data
@@ -163,8 +165,26 @@ lab:
     - User name: **student**
     - Password: **Pa55w.rd**
     - Privacy level: **Organizational**
-1. Click **Sign in** 
+1. Click **Sign in**
 1. Open the **Scheduled Refresh** section
 1. Turn on **Keep your data up to date**
 1. Select **Refresh frequency** of Daily
 1. Click **Apply**
+
+### Appendix: DAX Expressions
+
+#### Calculated Columns
+
+- Expression for **FullAddress**
+
+   ```FullAddress = Customers[AddressLine1] & ", " & Customers[City] & ", " & Customers[StateProvince] & ", " & Customers[CountryRegion] & ", " & Customers[PostalCode]```
+
+- Expression for **LineTotal**
+
+    ```LineTotal = Sales[OrderQty] * Sales[ListPrice]```
+
+#### Measures
+
+- Expression for **TargetSales**
+
+    ```TargetSales = SUM('Sales'[LineTotal]) * 1.2```
