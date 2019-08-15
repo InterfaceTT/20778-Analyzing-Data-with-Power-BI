@@ -32,10 +32,10 @@ lab:
 1. Create an import connection to a SQL Server database:
     - Server Name: **localhost**
     - Database Name: **AdventureworksLT**
-1. Open the **Lab Exercise 1.sql** file in the **D:\\Labfiles\\Mod09\\** folder.
+1. Open the **Lab Exercise 1.sql** file in the **D:\\Labfiles\\Mod09\\Starter\\** folder.
 1. Use the query under **Query 1** in the **Lab Exercise 1.sql** file to import the customer data. (Use the Advanced options to enter the SQL Query)
 1. Use the query under **Query 2** in the **Lab Exercise 1.sql** file to import the sales data. (Use the Advanced options to enter the SQL Query)
-1. Save the report as **AdventureWorksLT Sales 9.pbix** in the **D:\\Labfiles\\Mod09\\** folder.
+1. Save the report as **AdventureWorksLT Sales 9.pbix** in the **D:\\Labfiles\\Mod09\\Starter\\** folder.
 
 #### Task 2: Shape Data
 
@@ -68,11 +68,12 @@ lab:
 
 #### Task 3: Combine Data
 
-1. Create a new table named **Sales by States** by importing the **States** table from the **D:\\Labfiles\\Mod09\\States.xlsx**
-1. Create a new table named **State Codes** by importing the CSV file at **D:\\Labfiles\\Mod09\\StatesWithCodes.csv**
+1. Create a new table named **Sales by States** by importing the **States** table from the **D:\\Labfiles\\Mod09\\Starter\\States.xlsx**
+1. Create a new table named **State Codes** by importing the CSV file at **D:\\Labfiles\\Mod09\\Starter\\StatesWithCodes.csv**
 1. Edit the query **State Codes**
-    - Add a step to use the first row as headers.
-    - Close and Apply 
+    - Add a step to use the first row as headers
+    - Remove the column named **US**
+    - Close and Apply
 1. If the **Privacy levels** dialog box appears, in the right hand list boxes, click **Organizational**, and then click **Save**.
 1. Edit the query **Sales by State**
     - Merge the **State Codes** table with **Sales by State**
@@ -155,7 +156,7 @@ lab:
 
 #### Task 3: Set up Data Refresh through the Gateway
 
-1. Open the **AdventureworksLT Sales** dataset
+1. Open the **AdventureworksLT Sales 9** dataset
 1. Open the **Settings** for the dataset
 1. Open the Gateway connection area
 1. The Personal Gateway should be visible and active.  The name of the host computer will be displayed to the right in green letters.
