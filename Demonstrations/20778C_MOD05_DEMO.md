@@ -179,11 +179,11 @@ lab:
 13. On the **Modeling** tab, in the **Calculations** group, click **New Table**.
 
 14. In the formula bar, highlight **Table =**, type the following script, and then press Enter:
-<!-- {% raw %} -->
+{% raw %}
     ```
     DimCountry = DATATABLE ("Country", STRING, "Code", STRING,{{"United States", "US"},{"United Kingdom", "UK"},{"France", "FR"},{"Germany", "DE"},{"Spain", "ES"}})
     ```
-<!-- {% endraw %} -->
+{% endraw %}
 
 15. In the **FIELDS** pane, note the new table.
 
