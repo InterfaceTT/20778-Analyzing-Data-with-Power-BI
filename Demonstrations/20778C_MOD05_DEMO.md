@@ -1,7 +1,7 @@
 ---
 lab:
-    title: 'DEMO - Shaping and Combining Data'
-    module: 'Module 04 Demo - Shaping and Combining Data'
+    title: 'DEMO - Modeling Data'
+    module: 'Module 05 Demo - Modeling Data'
 ---
 # Module 5: Modeling Data
 
