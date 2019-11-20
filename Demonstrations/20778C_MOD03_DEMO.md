@@ -28,33 +28,23 @@ lab:
 
 #### Import Data from an Excel File
 
-1. Ensure that the **MT17B-WS2016-NAT**, **20778C-MIA-DC**, and **20778C-MIA-SQL** virtual machines are running, and then log on to **20778C-MIA-SQL** as **ADVENTUREWORKS\\Student** with the password **Pa55w.rd**.
+1. On the taskbar, click **Power BI Desktop**.
 
-2. In the **D:\\Demofiles\\Mod03** folder, run **Setup.cmd** as Administrator.
+1. In the **Welcome to** **Power BI Desktop** window, click **Already have a Power BI account? Sign in**.
 
-3. In the **User Account Control** dialog box, click **Yes**.
+1. In the **Sign in** dialog box, enter your account credentials, and then click **Sign in**.
 
-4. If prompted to continue this operation, type **Y**, and then press Enter.
+1. In the **Sign in to your account** dialog box, enter your password credentials, and then click **Sign in**.
 
-5. When the script completes, press any key to close the window.
+1. In the **Power BI Desktop** window, click **Get data**.
 
-6. On the taskbar, click **Power BI Desktop**.
+1. In the **Get Data** dialog box, click **Excel**, and then click **Connect**.
 
-7. In the **Welcome to** **Power BI Desktop** window, click **Already have a Power BI account? Sign in**.
+1. In the **Open** dialog box, navigate to **D:\\Demofiles\\Mod03\\Demo\\Files for Import**, click **Sales.xlsx**, and then click **Open**.
 
-8. In the **Sign in** dialog box, enter your account credentials, and then click **Sign in**.
+1. In the **Navigator** window, click **Sales** to show a preview of the data. Use the horizontal scrollbar to display the columns, select the **Sales** check box, and then click **Load**.
 
-9. In the **Sign in to your account** dialog box, enter your password credentials, and then click **Sign in**.
-
-10. In the **Power BI Desktop** window, click **Get data**.
-
-11. In the **Get Data** dialog box, click **Excel**, and then click **Connect**.
-
-12. In the **Open** dialog box, navigate to **D:\\Demofiles\\Mod03\\Demo\\Files for Import**, click **Sales.xlsx**, and then click **Open**.
-
-13. In the **Navigator** window, click **Sales** to show a preview of the data. Use the horizontal scrollbar to display the columns, select the **Sales** check box, and then click **Load**.
-
-14. When the load completes, in the **FIELDS** pane, point out the **Sales** table. Mention that Power BI has detected columns that can be used in aggregations, as indicated by the **Sum** symbol next to the column names.
+1. When the load completes, in the **FIELDS** pane, point out the **Sales** table. Mention that Power BI has detected columns that can be used in aggregations, as indicated by the **Sum** symbol next to the column names.
 
 #### Import Data from a CSV File
 

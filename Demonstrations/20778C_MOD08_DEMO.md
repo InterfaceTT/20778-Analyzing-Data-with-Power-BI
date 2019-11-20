@@ -17,45 +17,43 @@ lab:
 
 ### Demo 1: Using the Power BI Embedded Playground
 
-1. Start the **MT17B-WS2016-NAT**, **20778C-MIA-DC**, and **20778C-MIA-SQL** virtual machines, and then log on to **20778C-MIA-SQL** as **Student** with the password **Pa55w.rd**.
+1. In Internet Explorer, go to **https://microsoft.github.io/PowerBI-JavaScript/demo/v2-demo/index.html**.
 
-2. In Internet Explorer, go to **https://microsoft.github.io/PowerBI-JavaScript/demo/v2-demo/index.html**.
+1. Under **Sample Report**, click **Select**.
 
-3. Under **Sample Report**, click **Select**.
+1. In the **Embed** pane, review the default options.
 
-4. In the **Embed** pane, review the default options.
+1. In the **Code** pane, review the code to embed the report, and then click **Run**.
 
-5. In the **Code** pane, review the code to embed the report, and then click **Run**.
+1. In the **Log** pane, review the events listed, and then in the **Embedded view** pane, review the report.
 
-6. In the **Log** pane, review the events listed, and then in the **Embedded view** pane, review the report.
+1. In the **Region** section of the report, click **East**, and wait for the report to update showing on the results for the East region.
 
-7. In the **Region** section of the report, click **East**, and wait for the report to update showing on the results for the East region.
+1. On the right-hand side of the report above **FILTERS**, click the expand arrow.
 
-8. On the right-hand side of the report above **FILTERS**, click the expand arrow.
+1. Expand **Month**, and then select **Jan-14**. Note that the report updates to show only data in the East region in January 2014.
 
-9. Expand **Month**, and then select **Jan-14**. Note that the report updates to show only data in the East region in January 2014.
+1. Review the events list in the **Log** pane again.
 
-10. Review the events list in the **Log** pane again.
+1. In the **Interact** pane, expand **Data**, and then click **Export visual data summarized**.
 
-11. In the **Interact** pane, expand **Data**, and then click **Export visual data summarized**.
+1. In the **Code** pane, click **Run**.
 
-12. In the **Code** pane, click **Run**.
+1. Review the data returned to the **Log** pane.
 
-13. Review the data returned to the **Log** pane.
+1. In the left-hand menu, click **Sample tool**.
 
-14. In the left-hand menu, click **Sample tool**.
+1. Under **Sample Q&A**, click **Select**.
 
-15. Under **Sample Q&A**, click **Select**.
+1. In the **Embed** pane, review the default options.
 
-16. In the **Embed** pane, review the default options.
+1. In the **Code** pane, review the code to embed the Q&A element, and then click **Run**.
 
-17. In the **Code** pane, review the code to embed the Q&A element, and then click **Run**.
+1. In the **Embedded view** pane, review the question and the answer.
 
-18. In the **Embedded view** pane, review the question and the answer.
+1. Change the last variable in the question to **clustered bar chart**, and then review the change to the answer.
 
-19. Change the last variable in the question to **clustered bar chart**, and then review the change to the answer.
-
-20. Close Internet Explorer.
+1. Close Internet Explorer.
 
 ---
 
@@ -65,43 +63,41 @@ lab:
 
 #### Import a Custom Visualization
 
-1. Log on to **20778C-MIA-SQL** as **ADVENTUREWORKS\\Student** with the password **Pa55w.rd**.
+1. In Internet Explorer, go to **https://app.powerbi.com/visuals**.
 
-2. In Internet Explorer, go to **https://app.powerbi.com/visuals**.
+1. In the **Search Microsoft AppSource** box, type **Aster Plot**, and then press Enter.
 
-3. In the **Search Microsoft AppSource** box, type **Aster Plot**, and then press Enter.
+1. In the **Aster Plot** visual, click **Get it now**.
 
-4. In the **Aster Plot** visual, click **Get it now**.
+1. In the **Sign in to Microsoft AppSource** dialog box, enter the credentials you used to sign up for Power BI service, and then click **Sign in**.
 
-5. In the **Sign in to Microsoft AppSource** dialog box, enter the credentials you used to sign up for Power BI service, and then click **Sign in**.
+1. If the **One more thing** dialog box appears, click **Continue**.
 
-6. If the **One more thing** dialog box appears, click **Continue**.
+1. On the **Office Store** page, click **Download for Power BI**.
 
-7. On the **Office Store** page, click **Download for Power BI**.
+1. In the message box, click **Save**, and download the visual to a folder on your local machine.
 
-8. In the message box, click **Save**, and download the visual to a folder on your local machine.
+1. On the Taskbar, click **Power BI Desktop**.
 
-9. On the Taskbar, click **Power BI Desktop**.
+1. In the **Welcome to** **Power BI Desktop** window, click **Already have a Power BI account? Sign in**.
 
-10. In the **Welcome to** **Power BI Desktop** window, click **Already have a Power BI account? Sign in**.
+1. In the **Sign in** dialog box, enter your account credentials, and then click **Sign in**.
 
-11. In the **Sign in** dialog box, enter your account credentials, and then click **Sign in**.
+1. In the **Sign in to your account** dialog box, enter your password credentials, and then click **Sign in**.
 
-12. In the **Sign in to your account** dialog box, enter your password credentials, and then click **Sign in**.
+1. In the **Power BI Desktop** window, click **Open other reports**.
 
-13. In the **Power BI Desktop** window, click **Open other reports**.
+1. In the **Open** dialog box, browse to **D:\\Demofiles\\Mod08\\Demo**, click **Adventure Works Sales.pbix**, and then click **Open**.
 
-14. In the **Open** dialog box, browse to **D:\\Demofiles\\Mod08\\Demo**, click **Adventure Works Sales.pbix**, and then click **Open**.
+1. If the **Introducing Q&A** dialog box appears, click **Got it**.
 
-15. If the **Introducing Q&A** dialog box appears, click **Got it**.
+1. In the **VISUALIZATIONS** pane, click the ellipsis (**...**), and then click **Import from file**.
 
-16. In the **VISUALIZATIONS** pane, click the ellipsis (**...**), and then click **Import from file**.
+1. In the **Caution: Import custom visual** dialog box, click **Import**.
 
-17. In the **Caution: Import custom visual** dialog box, click **Import**.
+1. In the **Open** dialog box, browse to the location where you saved Aster Plot, click **AsterPlot.x.x.x.x.pbiviz**, and then click **Open**.
 
-18. In the **Open** dialog box, browse to the location where you saved Aster Plot, click **AsterPlot.x.x.x.x.pbiviz**, and then click **Open**.
-
-19. In the **Import custom visual** dialog box, click **OK**.
+1. In the **Import custom visual** dialog box, click **OK**.
 
 #### Use a Custom Visualization
 

@@ -8,8 +8,9 @@ lab:
 - [Module 7: Direct Connectivity](#module-7-direct-connectivity)
   - [Lesson 1: Cloud data](#lesson-1-cloud-data)
     - [Demo 1: Using Azure SQL Database as a Power BI data source](#demo-1-using-azure-sql-database-as-a-power-bi-data-source)
-      - [Import data from tables in a database in Azure SQL Database](#import-data-from-tables-in-a-database-in-azure-sql-database)
+      - [Use a Composite model](#use-a-composite-model)
       - [View relationships between the tables](#view-relationships-between-the-tables)
+      - [Create Visualizations](#create-visualizations)
 
 
 ## Lesson 1: Cloud data
@@ -18,33 +19,33 @@ lab:
 
 #### Connect to data from tables in a database in Azure SQL Database
 
-1. Ensure that the **MT17B-WS2016-NAT**, **20778C-MIA-DC**, and **20778C-MIA-SQL** virtual machines are running, and then log on to **20778C-MIA-SQL** as **ADVENTUREWORKS\\Student** with the password **Pa55w.rd**.
+1. On the Taskbar, click **Power BI Desktop**.
 
-2. On the Taskbar, click **Power BI Desktop**.
+1. In the **Welcome to Power BI Desktop** window, click **Already have a Power BI account? Sign in**.
 
-3. In the **Welcome to Power BI Desktop** window, click **Already have a Power BI account? Sign in**.
+1. In the **Sign in** dialog box, enter your account credentials, and then click **Sign in**.
 
-4. In the **Sign in** dialog box, enter your account credentials, and then click **Sign in**.
+1. In the **Sign in to your account** dialog box, enter your password credentials, and then click **Sign in**.
 
-5. In the **Sign in to your account** dialog box, enter your password credentials, and then click **Sign in**.
+1. In the **Power BI Desktop** window, click **Get data**.
 
-6. In the **Power BI Desktop** window, click **Get data**.
+1. In the **Get Data** dialog box, click **Azure SQL database**, and then click **Connect**.
 
-7. In the **Get Data** dialog box, click **Azure SQL database**, and then click **Connect**.
+1. In the **SQL Server database** window, in the **Server** box, type the URL of the Azure server **interfacett-adlt.database.windows.net**.
 
-8. In the **SQL Server database** window, in the **Server** box, type the URL of the Azure server **\<*Server Name*\>.database.windows.net** (where \<*Server Name*\> is the name of the server that you created).
+1. In the **Database (optional)** box, type **AdventureWorksLT**.
 
-9. In the **Database (optional)** box, type **AdventureWorksLT**.
-10. In the **Data Connectivity mode**, select **DirectQuery**, and then click **OK**.
+1. In the **Data Connectivity mode**, select **DirectQuery**, and then click **OK**.
 
-11. In the **SQL Server database** dialog box, on the **Database** tab, in the **User name** box, type **Student**.
+1. In the **SQL Server database** dialog box, on the **Database** tab, in the **User name** box, type **Student**.
 
-12. In the **Password** box, type **Pa55w.rd**, and then click **Connect**.
+1. In the **Password** box, type **Pa55w.rd**, and then click **Connect**.
 
-13. In the **Navigator** dialog box, select the **SalesLT.Customer**, **SalesLT.Product**, **SalesLT.ProductCategory**,**SalesLT.SalesOrderDetail**, and **SalesLT.SalesOrderHeader** check boxes, and then click **Load**.
+1. In the **Navigator** dialog box, select the **SalesLT.Customer**, **SalesLT.Product**, **SalesLT.ProductCategory**,**SalesLT.SalesOrderDetail**, and **SalesLT.SalesOrderHeader** check boxes, and then click **Load**.
 
-14. In the **FIELDS** pane, notice that the five tables have been added. When the report is published to the Power BI service, the tables are combined into a single dataset.
-15. The connection is now a DirectQuery connection. The data has not been imported and you are always looking at current data.
+1. In the **FIELDS** pane, notice that the five tables have been added. When the report is published to the Power BI service, the tables are combined into a single dataset.
+
+1. The connection is now a DirectQuery connection. The data has not been imported and you are always looking at current data.
 
 #### Use a Composite model
 
@@ -67,9 +68,9 @@ DirectQuery storage is ideal for some of your data, but some data rarely changes
 
 1. In the menu on the left, click **Model**, and then increase the size of the **SalesLT SalesOrderDetail**, **SalesLT SalesOrderHeader**, and **SalesLT Customer** tables to display all columns.
 
-2. Position the cursor on the relationship arrow between **SalesLT SalesOrderDetail** and **SalesLT SalesOrderHeader**. Notice that the related columns are highlighted.
+1. Position the cursor on the relationship arrow between **SalesLT SalesOrderDetail** and **SalesLT SalesOrderHeader**. Notice that the related columns are highlighted.
 
-3. Position the cursor on the relationship arrow between **SalesLT SalesOrderHeader** and **SalesLT Customer**. Point out that the related columns are highlighted.
+1. Position the cursor on the relationship arrow between **SalesLT SalesOrderHeader** and **SalesLT Customer**. Point out that the related columns are highlighted.
 1. Notice that the tables are still related irrespective of the Storage mode.
 
 #### Create Visualizations

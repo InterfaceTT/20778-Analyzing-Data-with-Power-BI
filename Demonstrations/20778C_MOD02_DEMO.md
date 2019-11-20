@@ -16,69 +16,59 @@ lab:
 
 ### Demo 1: Creating a Report with Power BI Desktop
 
-1. Ensure the **MT17B-WS2016-NAT**, **20778C-MIA-DC** and **20778C-MIA-SQL** virtual machines are running, log on to **20778C-MIA-SQL** as **ADVENTUREWORKS\\Student** with the password **Pa55w.rd**.
+1. Start **Microsoft SQL Server Management Studio**, and connect to the **Localhost** database engine instance using Windows authentication.
 
-2. In the **D:\\Demofiles\\Mod02** folder, run **Setup.cmd** as Administrator.
+1. Open the **Demo.ssmssln** solution in the **D:\\Demofiles\\Mod02\\Demo** folder.
 
-3. In the **User Account Control** dialog box, click **Yes**.
+1. In Solution Explorer, expand **Queries**, and then open the **1 - Power BI.sql** script file.
 
-4. If prompted to continue this operation, type **Y**, and then press Enter.
+1. On the Taskbar, click **Power BI Desktop**.
 
-5. When the script completes, press any key to close the window.
+1. In the **Welcome to** **Power BI Desktop** window, click **Already have a Power BI account? Sign in**.
 
-6. Start **Microsoft SQL Server Management Studio 18**, and connect to the **MIA-SQL** database engine instance using Windows authentication.
+1. In the **Sign in** dialog box, enter your account credentials, and then click **Sign in**.
 
-7. Open the **Demo.ssmssln** solution in the **D:\\Demofiles\\Mod02\\Demo** folder.
+1. In the **Sign in to your account** dialog box, enter your password credentials, and then click **Sign in**.
 
-8. In Solution Explorer, expand **Queries**, and then open the **1 - Power BI.sql** script file.
+1. In the **Power BI Desktop** window, click **Get data**.
 
-9. On the Taskbar, click **Power BI Desktop**.
+1. In the **Get Data** dialog box, click **Azure SQL database**, and then click **Connect**.
 
-10. In the **Welcome to** **Power BI Desktop** window, click **Already have a Power BI account? Sign in**.
+1. In the **SQL Server database** window, in the **Server** box, type the URL of the Azure server ***\<Server Name\>*.database.windows.net** (where ***\<Server Name\>*** is the name of the server you created), and in the **Database (optional)** box, type **AdventureWorksLT**.
 
-11. In the **Sign in** dialog box, enter your account credentials, and then click **Sign in**.
+1. Expand **Advanced options**.
 
-12. In the **Sign in to your account** dialog box, enter your password credentials, and then click **Sign in**.
+1. In SQL Server Management Studio, copy the **1 - Power BI.sql** query to the clipboard.
 
-13. In the **Power BI Desktop** window, click **Get data**.
+1. In the Power BI Desktop, in the **SQL statement (optional, requires database)** box, paste the query, and then click **OK**.
 
-14. In the **Get Data** dialog box, click **Azure SQL database**, and then click **Connect**.
+1. In the **SQL Server database** window, click **Database**.
 
-15. In the **SQL Server database** window, in the **Server** box, type the URL of the Azure server ***\<Server Name\>*.database.windows.net** (where ***\<Server Name\>*** is the name of the server you created), and in the **Database (optional)** box, type **AdventureWorksLT**.
+1. In the **User name** box, type **Student**.
 
-16. Expand **Advanced options**.
+1. In the **Password** box, type **Pa55w.rd**, and then click **Connect**.
 
-17. In SQL Server Management Studio, copy the **1 - Power BI.sql** query to the clipboard.
+1. In the data preview window, click **Load**.
 
-18. In the Power BI Desktop, in the **SQL statement (optional, requires database)** box, paste the query, and then click **OK**.
+1. If the **Connection Settings** window appears, leave **Import** selected, and then click **OK**.
 
-19. In the **SQL Server database** window, click **Database**.
+1. In the **VISUALIZATIONS** pane, click **Stacked column chart**.
 
-20. In the **User name** box, type **Student**.
+1. In the **FIELDS** pane, under **Query1**, select the **ProductName** and **TotalSales** check boxes. The chart will auto populate. Expand the chart control to horizontally show the full names of the products.
 
-21. In the **Password** box, type **Pa55w.rd**, and then click **Connect**.
+1. In the **VISUALIZATIONS** pane, click **Format**.
 
-22. In the data preview window, click **Load**.
+1. Expand **Title**, and change the **Title text** value to **Top 10 Selling Products**.
 
-23. If the **Connection Settings** window appears, leave **Import** selected, and then click **OK**.
+1. Next to **Alignment**, click the **Center** icon.
 
-24. In the **VISUALIZATIONS** pane, click **Stacked column chart**.
+1. Toggle **Data labels** to be **On**.
 
-25. In the **FIELDS** pane, under **Query1**, select the **ProductName** and **TotalSales** check boxes. The chart will auto populate. Expand the chart control to horizontally show the full names of the products.
+1. Expand the **Data colors** list, and choose another color to change the bars on the chart.
 
-26. In the **VISUALIZATIONS** pane, click **Format**.
+1. On the **File** menu, click **Save As**. Name the report **Adventure Works Sales 2**, and save to the **D:\\Demofiles\\Mod02\\Demo** folder.
 
-27. Expand **Title**, and change the **Title text** value to **Top 10 Selling Products**.
-
-28. Next to **Alignment**, click the **Center** icon.
-
-29. Toggle **Data labels** to be **On**.
-
-30. Expand the **Data colors** list, and choose another color to change the bars on the chart.
-
-31. On the **File** menu, click **Save As**. Name the report **Adventure Works Sales 2**, and save to the **D:\\Demofiles\\Mod02\\Demo** folder.
-
-32. Leave Power BI Desktop and the report open for the next demonstration.
+1. Leave Power BI Desktop and the report open for the next demonstration.
 
 ---
 

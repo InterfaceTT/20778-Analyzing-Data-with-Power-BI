@@ -21,73 +21,55 @@ lab:
 
 ### Demo 1: Adding Visualizations to a Report
 
-#### Sign up for Power BI
+1. Start **Microsoft SQL Server Management Studio**, and then connect to the **MIA-SQL** database engine instance by using Windows® authentication.
 
-1. If you do not have a Power BI login, open **Internet Explorer**, go to **https://powerbi.microsoft.com/en-us/documentation/powerbi-admin-signing-up-for-power-bi-with-a-new-office-365-trial**, and follow the steps to create an account.
+1. In the **D:\\Demofiles\\Mod06\\Demo** folder, open the **Demo.ssmssln** solution.
 
-2. Close Internet Explorer.
+1. In Solution Explorer, expand **Queries**, and then open the **1 - Charts.sql** script file.
 
-#### Connect to a Database in Azure SQL Database and Import Data
+1. On the Taskbar, click **Power BI Desktop**.
 
-1. Ensure that the **MT17B-WS2016-NAT**, **20778C-MIA-DC**, and **20778C-MIA-SQL** virtual machines are running, and then log on to **20778C-MIA-SQL** as **ADVENTUREWORKS\\Student** with the password **Pa55w.rd**.
+1. In the **Welcome to Power BI Desktop** window, click **Already have a Power BI account? Sign in**.
 
-2. In the **D:\\Demofiles\\Mod06** folder, run **Setup.cmd** as Administrator.
+1. In the **Sign in** dialog box, enter your account credentials, and then click **Sign in**.
 
-3. In the **User Account Control** dialog box, click **Yes**.
+1. In the **Sign in to your account** dialog box, enter your password credentials, and then click **Sign in**.
 
-4. If prompted to continue this operation, type **Y**, and then press Enter.
+1. In the **Power BI Desktop** window, click **Get data**.
 
-5. When the script completes, press any key to close the window.
+1. In the **Get Data** dialog box, click **Azure SQL database**, and then click **Connect**.
 
-6. Start **Microsoft SQL Server Management Studio 18**, and then connect to the **MIA-SQL** database engine instance by using Windows® authentication.
+1. In the **SQL Server database** dialog box, in the **Server** box, type the URL of the Azure server **interfacett-adlt.database.windows.net**.
 
-7. In the **D:\\Demofiles\\Mod06\\Demo** folder, open the **Demo.ssmssln** solution.
+1. In the **Database (optional)** box, type **AdventureWorksLT**.
 
-8. In Solution Explorer, expand **Queries**, and then open the **1 - Charts.sql** script file.
+1. Expand the **Advanced options** box.
 
-9. On the Taskbar, click **Power BI Desktop**.
+1. In SQL Server Management Studio, in the **1 - Charts.sql** query, copy the query under **Customer Address** to the clipboard.
 
-10. In the **Welcome to Power BI Desktop** window, click **Already have a Power BI account? Sign in**.
+1. In Power BI Desktop, in the **SQL statement (optional, requires database)** box, paste the query, and then click **OK**.
 
-11. In the **Sign in** dialog box, enter your account credentials, and then click **Sign in**.
+1. In the **SQL Server database** dialog box, on the **Database** tab, in the **User name** box, type **Student**, and in the **Password** box, type **Pa55w.rd**, and then click **Connect**.
 
-12. In the **Sign in to your account** dialog box, enter your password credentials, and then click **Sign in**.
+1. In the data preview window, click **Load**.
 
-13. In the **Power BI Desktop** window, click **Get data**.
+1. On the **Home** tab, click **Get Data**.
 
-14. In the **Get Data** dialog box, click **Azure SQL database**, and then click **Connect**.
+1. In the **Get Data** dialog box, click **Azure SQL database**, and then click **Connect**.
 
-15. In the **SQL Server database** dialog box, in the **Server** box, type the URL of the Azure server **\<*Server Name*\>.database.windows.net** (where **\<*Server Name*\>** is the name of the server that you created).
+1. In the **SQL Server database** dialog box, in the **Server** box, type the URL of the Azure server **interfacett-adlt.database.windows.net**.
 
-16. In the **Database (optional)** box, type **AdventureWorksLT**.
+1. In the **Database (optional)** box, type **AdventureWorksLT**.
 
-17. Expand the **Advanced options** box.
+1. Expand the **Advanced options** box.
 
-18. In SQL Server Management Studio, in the **1 - Charts.sql** query, copy the query under **Customer Address** to the clipboard.
+1. In SQL Server Management Studio, in the **1 - Charts.sql** query, copy the query under **Sales** to the clipboard.
 
-19. In Power BI Desktop, in the **SQL statement (optional, requires database)** box, paste the query, and then click **OK**.
+1. In Power BI Desktop, in the **SQL statement (optional, requires database)** box, paste the query, and then click **OK**.
 
-20. In the **SQL Server database** dialog box, on the **Database** tab, in the **User name** box, type **Student**, and in the **Password** box, type **Pa55w.rd**, and then click **Connect**.
+1. In the data preview window, click **Load**.
 
-21. In the data preview window, click **Load**.
-
-22. On the **Home** tab, click **Get Data**.
-
-23. In the **Get Data** dialog box, click **Azure SQL database**, and then click **Connect**.
-
-24. In the **SQL Server database** dialog box, in the **Server** box, type the URL of the Azure server **\<*Server Name*\>.database.windows.net** (where **\<*Server Name*\>** is the name of the server that you created).
-
-25. In the **Database (optional)** box, type **AdventureWorksLT**.
-
-26. Expand the **Advanced options** box.
-
-27. In SQL Server Management Studio, in the **1 - Charts.sql** query, copy the query under **Sales** to the clipboard.
-
-28. In Power BI Desktop, in the **SQL statement (optional, requires database)** box, paste the query, and then click **OK**.
-
-29. In the data preview window, click **Load**.
-
-30. The window will close and return to the report.
+1. The window will close and return to the report.
 
 #### Add Visualizations to a Report
 

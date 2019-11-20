@@ -21,99 +21,89 @@ lab:
 
 #### Demo 1: Working with Relationships in Power BI
 
-1. Ensure the **MT17B-WS2016-NAT**, **20778C-MIA-DC** and **20778C-MIA-SQL** virtual machines are running, log on to **20778C-MIA-SQL** as **ADVENTUREWORKS\\Student** with the password **Pa55w.rd**.
+1. On the Taskbar, click **Power BI Desktop**.
 
-2. In the **D:\\Demofiles\\Mod05** folder, run **Setup.cmd** as Administrator.
+1. In the **Welcome to** **Power BI Desktop** window, click **Already have a Power BI account? Sign in**.
 
-3. In the **User Account Control** dialog box, click **Yes**.
+1. In the **Sign in** dialog box, enter your account credentials, and then click **Sign in**.
 
-4. If prompted to continue this operation, type **Y**, and then press Enter.
+1. In the **Power BI Desktop** window, click **Get data**.
 
-5. When the script completes, press any key to close the window.
+1. In the **Get Data** dialog box, click **Excel**, and then click **Connect**.
 
-6. On the Taskbar, click **Power BI Desktop**.
+1. In the **Open** dialog box, navigate to **D:\\Demofiles\\Mod05\\Demo**, click **Adventure Works Sales Data.xlsx**, and then click **Open**.
 
-7. In the **Welcome to** **Power BI Desktop** window, click **Already have a Power BI account? Sign in**.
+1. In the **Navigator** dialog box, select the **DimCurrency**, **DimCustomer**, **DimDate**, **DimProduct**, **DimPromotion**, **DimSalesTerritory**, and **FactInternetSales** check boxes, and then click **Load**.
 
-8. In the **Sign in** dialog box, enter your account credentials, and then click **Sign in**.
+1. In the views pane on the left-hand side, click **Model**.
 
-9. In the **Power BI Desktop** window, click **Get data**.
+1. Point out that Power BI has created the relationships automatically. The layout represents a star schema.
 
-10. In the **Get Data** dialog box, click **Excel**, and then click **Connect**.
+1. Maximize the tables in the relationship diagram to display all columns.
 
-11. In the **Open** dialog box, navigate to **D:\\Demofiles\\Mod05\\Demo**, click **Adventure Works Sales Data.xlsx**, and then click **Open**.
+1. Point out that Power BI has not created a relationship to **DimDate** from **FactInternetSales**.
 
-12. In the **Navigator** dialog box, select the **DimCurrency**, **DimCustomer**, **DimDate**, **DimProduct**, **DimPromotion**, **DimSalesTerritory**, and **FactInternetSales** check boxes, and then click **Load**.
+1. On the **Home** tab, click **Manage Relationships**.
 
-13. In the views pane on the left-hand side, click **Model**.
+1. In the **Manage relationships** dialog box, click **New**.
 
-14. Point out that Power BI has created the relationships automatically. The layout represents a star schema.
+1. In the **Create relationship** dialog box, in the top table list, click **FactInternetSales**. When the table preview appears below, click the **OrderDateKey** column.
 
-15. Maximize the tables in the relationship diagram to display all columns.
+1. In the bottom table list, click **DimDate**. When the table preview appears below, click the **DateKey** column.
 
-16. Point out that Power BI has not created a relationship to **DimDate** from **FactInternetSales**.
+1. Check that the **Cardinality** is set to **Many to one (*:1)**, the **Cross filter direction** is **Single**, and **Make this relationship active** is selected, and then click **OK**.
 
-17. On the **Home** tab, click **Manage Relationships**.
+1. In the **Manage relationships** dialog box, click **Close**.
 
-18. In the **Manage relationships** dialog box, click **New**.
+1. In the diagram, in the **FactInternetSales** table, click the **DueDateKey** column. Drag the **DueDateKey** column to the **DateKey** column in the **DimDate** table. Point out the dotted line to show that the relationship is inactive. This is because there is more than one related column in the two tables.
 
-19. In the **Create relationship** dialog box, in the top table list, click **FactInternetSales**. When the table preview appears below, click the **OrderDateKey** column.
+1. In the diagram, in the **FactInternetSales** table, click the **ShipDateKey** column. Drag the **ShipDateKey** column to the **DateKey** column of the **DimDate** table. Point out the dotted line to show that the relationship is inactive.
 
-20. In the bottom table list, click **DimDate**. When the table preview appears below, click the **DateKey** column.
+1. Point out that the relationships from **FactInternetSales** to **DimCurrency**, **DimProduct**, **DimPromotion**, and **DimSalesTerritory**, have a cross filter direction of **Single**, indicated by the single arrow icon. These are lookup tables, so should be Single.
 
-21. Check that the **Cardinality** is set to **Many to one (*:1)**, the **Cross filter direction** is **Single**, and **Make this relationship active** is selected, and then click **OK**.
+1. On the **Home** tab, click **Manage Relationships**.
 
-22. In the **Manage relationships** dialog box, click **Close**.
+1. In the **Manage relationships** dialog box, double-click the **FactInternetSales (CurrencyKey)** relationship.
 
-23. In the diagram, in the **FactInternetSales** table, click the **DueDateKey** column. Drag the **DueDateKey** column to the **DateKey** column in the **DimDate** table. Point out the dotted line to show that the relationship is inactive. This is because there is more than one related column in the two tables.
+1. In the **Edit relationship** dialog box, in the **Cross filter direction** list, ensure **Single** is selected, and then click **OK**.
 
-24. In the diagram, in the **FactInternetSales** table, click the **ShipDateKey** column. Drag the **ShipDateKey** column to the **DateKey** column of the **DimDate** table. Point out the dotted line to show that the relationship is inactive.
+1. In the **Manage relationships** dialog box, double-click the **FactInternetSales (ProductKey)** relationship.
 
-25. Point out that the relationships from **FactInternetSales** to **DimCurrency**, **DimProduct**, **DimPromotion**, and **DimSalesTerritory**, have a cross filter direction of **Single**, indicated by the single arrow icon. These are lookup tables, so should be Single.
+1. In the **Edit relationships** dialog box, in the **Cross filter direction** list, ensure **Single** is selected, and then click **OK**.
 
-26. On the **Home** tab, click **Manage Relationships**.
+1. In the **Manage relationships** dialog box, double-click the **FactInternetSales (PromotionKey)** relationship.
 
-27. In the **Manage relationships** dialog box, double-click the **FactInternetSales (CurrencyKey)** relationship.
+1. In the **Edit relationships** dialog box, in the **Cross filter direction** list, ensure **Single** is selected, and then click **OK**.
 
-28. In the **Edit relationship** dialog box, in the **Cross filter direction** list, ensure **Single** is selected, and then click **OK**.
+1. In the **Manage relationships** dialog box, double-click the **FactInternetSales (SalesTerritoryKey)** relationship.
 
-29. In the **Manage relationships** dialog box, double-click the **FactInternetSales (ProductKey)** relationship.
+1. In the **Edit relationships** dialog box, in the **Cross filter direction** list, ensure **Single** is selected, and then click **OK**.
 
-30. In the **Edit relationships** dialog box, in the **Cross filter direction** list, ensure **Single** is selected, and then click **OK**.
+1. In the **Manage relationships** dialog box, click **Close**.
 
-31. In the **Manage relationships** dialog box, double-click the **FactInternetSales (PromotionKey)** relationship.
+1. Click the relationship line between **FactInternetSales** and **DimCustomer**. Point out that this is a one to one relationship because the FactInternetSales table only contains an extract. Normally this would be many to one. This must be changed so it is ready for the remainder of the data to be loaded later.
 
-32. In the **Edit relationships** dialog box, in the **Cross filter direction** list, ensure **Single** is selected, and then click **OK**.
+1. Right-click the relationship line between **FactInternetSales** and **DimCustomer**, and then click **Delete**.
 
-33. In the **Manage relationships** dialog box, double-click the **FactInternetSales (SalesTerritoryKey)** relationship.
+1. In the **Delete Relationship** dialog box, click **Delete**.
 
-34. In the **Edit relationships** dialog box, in the **Cross filter direction** list, ensure **Single** is selected, and then click **OK**.
+1. On the **Home** tab, click **Manage Relationships**.
 
-35. In the **Manage relationships** dialog box, click **Close**.
+1. In the **Manage relationships** dialog box, click **New**.
 
-36. Click the relationship line between **FactInternetSales** and **DimCustomer**. Point out that this is a one to one relationship because the FactInternetSales table only contains an extract. Normally this would be many to one. This must be changed so it is ready for the remainder of the data to be loaded later.
+1. In the **Create relationship** dialog box, in the top table list, click **FactInternetSales** and in the data preview, click the **CustomerKey** column.
 
-37. Right-click the relationship line between **FactInternetSales** and **DimCustomer**, and then click **Delete**.
+1. In the bottom table list, click **DimCustomer**, and in the data preview, click **CustomerKey**.
 
-38. In the **Delete Relationship** dialog box, click **Delete**.
+1. In the **Cardinality** list, click **Many to one (*:1)**, and then click **OK**.
 
-39. On the **Home** tab, click **Manage Relationships**.
+1. In the **Manage relationships** dialog box, click **Close**.
 
-40. In the **Manage relationships** dialog box, click **New**.
+1. In the diagram, point out that the relationship icon next to **FactInternetSales** is now a star icon.
 
-41. In the **Create relationship** dialog box, in the top table list, click **FactInternetSales** and in the data preview, click the **CustomerKey** column.
+1. On the **File** menu, click **Save**, and save the file to the **D:\\Demofiles\\Mod05\\Demo** folder as **Adventure Works Sales 5.pbix**.
 
-42. In the bottom table list, click **DimCustomer**, and in the data preview, click **CustomerKey**.
-
-43. In the **Cardinality** list, click **Many to one (*:1)**, and then click **OK**.
-
-44. In the **Manage relationships** dialog box, click **Close**.
-
-45. In the diagram, point out that the relationship icon next to **FactInternetSales** is now a star icon.
-
-46. On the **File** menu, click **Save**, and save the file to the **D:\\Demofiles\\Mod05\\Demo** folder as **Adventure Works Sales 5.pbix**.
-
-47. Leave Power BI Desktop open for the next demonstration.
+1. Leave Power BI Desktop open for the next demonstration.
 
 ---
 

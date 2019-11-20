@@ -18,97 +18,85 @@ lab:
 
 ### Demo 1: Importing Data with Power BI Desktop
 
-1. Ensure that the **MT17B-WS2016-NAT**, **20778C-MIA-DC**, and **20778C-MIA-SQL** virtual machines are running, and then log on to **20778C-MIA-SQL** as **ADVENTUREWORKS\\Student** with the password **Pa55w.rd**.
+1. On the desktop, double-click **Power BI Desktop**.
 
-2. In the **D:\\Demofiles\\Mod01** folder, run **Setup.cmd** as **Administrator**.
+1. In the **Welcome to Power BI Desktop** window, click **Already have a Power BI account? Sign in**.
 
-3. In the **User Account Control** dialog box, click **Yes**.
+1. In the **Sign in** dialog box, enter your credentials, and then click **Sign in**.
 
-4. If prompted to continue this operation, type **Y**, and then press Enter.
+1. In the **Sign in to your account** dialog box, enter your credentials, and then click **Sign in**.
 
-5. When the script completes, press any key to close the window.
+1. On the **Power BI Desktop** screen, click **Get data**.
 
-6. If you do not have a Power BI login, open Internet Explorer, go to **https://powerbi.microsoft.com/en-us/documentation/powerbi-admin-signing-up-for-power-bi-with-a-new-office-365-trial**, and follow the steps to create an account.
+1. In the **Get Data** dialog box, click **SQL Server database**, and then click **Connect**.
 
-7. On the desktop, double-click **Power BI Desktop**.
+1. In the **SQL Server database** dialog box, in the **Server** box, type **Localhost**.
 
-8. In the **Welcome to Power BI Desktop** window, click **Already have a Power BI account? Sign in**.
+1. In the **Database (optional)** box, type **AdventureWorksDW**, and then click **OK**.
 
-9. In the **Sign in** dialog box, enter your credentials, and then click **Sign in**.
+1. In the **SQL Server database** dialog box, leave the default settings unchanged, and then click **Connect**.
 
-10. In the **Sign in to your account** dialog box, enter your credentials, and then click **Sign in**.
+1. In the **Encryption Support** dialog box, click **OK**.
 
-11. On the **Power BI Desktop** screen, click **Get data**.
+1. In the **Navigator** dialog box, select the **FactInternetSales** check box.
 
-12. In the **Get Data** dialog box, click **SQL Server database**, and then click **Connect**.
+1. Click **Select Related Tables**, and then click **Edit**.
 
-13. In the **SQL Server database** dialog box, in the **Server** box, type **MIA-SQL**.
+1. If the **Connection Settings** dialog box appears, leave **Import** selected, and then click **OK**.
 
-14. In the **Database (optional)** box, type **AdventureWorksDW**, and then click **OK**.
+1. In the **Untitled - Power Query Editor** window, in the **Queries** pane, click **FactInternetSales**.
 
-15. In the **SQL Server database** dialog box, leave the default settings unchanged, and then click **Connect**.
+1. Right-click the **CarrierTrackingNumber** column, and click **Remove**.
 
-16. In the **Encryption Support** dialog box, click **OK**.
+1. Right-click the **CustomerPONumber** column, and click **Remove**.
 
-17. In the **Navigator** dialog box, select the **FactInternetSales** check box.
+1. In the **Queries** pane, click **DimCustomer**.
 
-18. Click **Select Related Tables**, and then click **Edit**.
+1. Right-click the **Title** column, and click **Remove**.
 
-19. If the **Connection Settings** dialog box appears, leave **Import** selected, and then click **OK**.
+1. Right-click the **NameStyle** column, and click **Remove**.
 
-20. In the **Untitled - Power Query Editor** window, in the **Queries** pane, click **FactInternetSales**.
+1. Right-click the **Suffix** column, and click **Remove**.
 
-21. Right-click the **CarrierTrackingNumber** column, and click **Remove**.
+1. Right-click the **MaritalStatus** column, and click **Replace Values**.
 
-22. Right-click the **CustomerPONumber** column, and click **Remove**.
+1. In the **Replace Values** dialog box, in the **Value To Find** box, type **M**.
 
-23. In the **Queries** pane, click **DimCustomer**.
+1. In the **Replace With** box, type **Married**, and then click **OK**.
 
-24. Right-click the **Title** column, and click **Remove**.
+1. Right-click the **MaritalStatus** column, and click **Replace Values**.
 
-25. Right-click the **NameStyle** column, and click **Remove**.
+1. In the **Replace Values** dialog box, in the **Value To Find** box, type **S**.
 
-26. Right-click the **Suffix** column, and click **Remove**.
+1. In the **Replace With** box, type **Single**, and then click **OK**.
 
-27. Right-click the **MaritalStatus** column, and click **Replace Values**.
+1. Right-click the **Gender** column, and click **Replace Values**.
 
-28. In the **Replace Values** dialog box, in the **Value To Find** box, type **M**.
+1. In the **Replace Values** dialog box, in the **Value To Find** box, type **F**.
 
-29. In the **Replace With** box, type **Married**, and then click **OK**.
+1. In the **Replace With** box, type **Female**, and then click **OK**.
 
-30. Right-click the **MaritalStatus** column, and click **Replace Values**.
+1. Right-click the **Gender** column, and click **Replace Values**.
 
-31. In the **Replace Values** dialog box, in the **Value To Find** box, type **S**.
+1. In the **Replace Values** dialog box, in the **Value To Find** box, type **M**.
 
-32. In the **Replace With** box, type **Single**, and then click **OK**.
+1. In the **Replace With** box, type **Male**, and then click **OK**.
 
-33. Right-click the **Gender** column, and click **Replace Values**.
+1. On the **Home** menu, click **Close & Apply**.
 
-34. In the **Replace Values** dialog box, in the **Value To Find** box, type **F**.
+1. Wait until the data has successfully loaded.
 
-35. In the **Replace With** box, type **Female**, and then click **OK**.
+1. In the **FIELDS** pane, expand **FactInternetSales**, and then click **SalesAmount**.
 
-36. Right-click the **Gender** column, and click **Replace Values**.
+1. On the **Modeling** tab, in the **Formatting** group, click **Format: Currency general**, point to **Currency**, and then click **$ English (United States)**.
 
-37. In the **Replace Values** dialog box, in the **Value To Find** box, type **M**.
+1. In the **FIELDS** pane, right-click **DimCustomer**, and then click **New column**.
 
-38. In the **Replace With** box, type **Male**, and then click **OK**.
+1. In the formula bar, type **FullName = DimCustomer[FirstName] & " " & DimCustomer[LastName]**, and then press Enter.
 
-39. On the **Home** menu, click **Close & Apply**.
+1. On the **File** menu, click **Save**. Name the file **Adventure Works Sales**, and save the file to **D:\\Demofiles\\Mod01**.
 
-40. Wait until the data has successfully loaded.
-
-41. In the **FIELDS** pane, expand **FactInternetSales**, and then click **SalesAmount**.
-
-42. On the **Modeling** tab, in the **Formatting** group, click **Format: Currency general**, point to **Currency**, and then click **$ English (United States)**.
-
-43. In the **FIELDS** pane, right-click **DimCustomer**, and then click **New column**.
-
-44. In the formula bar, type **FullName = DimCustomer[FirstName] & " " & DimCustomer[LastName]**, and then press Enter.
-
-45. On the **File** menu, click **Save**. Name the file **Adventure Works Sales**, and save the file to **D:\\Demofiles\\Mod01**.
-
-46. Leave Power BI Desktop open for the next demonstration.
+1. Leave Power BI Desktop open for the next demonstration.
 
 ---
 
