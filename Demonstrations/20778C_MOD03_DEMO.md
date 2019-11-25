@@ -117,7 +117,7 @@ lab:
 
 1. On the **Home** tab, click the **Get Data** arrow, and then click **SQL Server**.
 
-2. In the **SQL Server database** dialog box, in the **Server** box, type **MIA-SQL**, in the **Database (optional)** box, type **AdventureWorks**, and then click **OK**.
+2. In the **SQL Server database** dialog box, in the **Server** box, type **Localhost**, in the **Database (optional)** box, type **AdventureWorks**, and then click **OK**.
 
 3. If the **SQL Server database** dialog box appears, ensure the **Windows** tab is selected, click **Use my current credentials**, and then click **Connect**.
 
@@ -131,11 +131,11 @@ lab:
 
 1. On the **Home** tab, click the **Get Data** arrow, and then click **SQL Server**.
 
-2. In the **SQL Server database** dialog box, in the **Server** box, type **MIA-SQL**, in the **Database (optional)** box, type **AdventureWorks**.
+2. In the **SQL Server database** dialog box, in the **Server** box, type **Localhost**, in the **Database (optional)** box, type **AdventureWorks**.
 
 3. Expand **Advanced options**, and in the **SQL statement (optional, required database)** box, type **SELECT * FROM [Production].[Product]**, and then click **OK**.
 
-4. In the **MIA-SQL: AdventureWorks** window, a preview of the data is displayed, and then click **Edit**.
+4. In the **Localhost: AdventureWorks** window, a preview of the data is displayed, and then click **Edit**.
 
 5. In Power Query Editor, in the **ProductSubcategoryID** column, click the filter icon, and then click **Remove Empty**.
 

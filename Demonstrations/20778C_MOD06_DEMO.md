@@ -21,7 +21,7 @@ lab:
 
 ### Demo 1: Adding Visualizations to a Report
 
-1. Start **Microsoft SQL Server Management Studio**, and then connect to the **MIA-SQL** database engine instance by using Windows® authentication.
+1. Start **Microsoft SQL Server Management Studio**, and then connect to the **Localhost** database engine instance by using Windows® authentication.
 
 1. In the **D:\\Demofiles\\Mod06\\Demo** folder, open the **Demo.ssmssln** solution.
 
